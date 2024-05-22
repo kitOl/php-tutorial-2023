@@ -13,18 +13,18 @@
 
   <main>
     <form action="includes/formhandler.inc.php" method="post">
-      <label for="firsname">Firstname?</label>
-      <input type="text" id="firstname" name="firstname" placeholder="Firstname...">
+      <label for="firstname">Firstname?</label>
+      <input type="text" id="firstname" name="firstname" placeholder="Firstname..." value="<?= $_GET['firstname'] ?? '' ?>" />
 
-      <label for="firsname">Lastname?</label>
-      <input type="text" id="lastname" name="lastname" placeholder="Lastname...">
+      <label for="Lastname">Lastname?</label>
+      <input type="text" id="lastname" name="lastname" placeholder="Lastname..." value="<?= $_GET['lastname'] ?? '' ?>" />
 
-      <label for="favouriepet">Favourite Pet?</label>
-      <select name="favouriteper" id="favouritepet">
+      <label for="favouritepet">Favourite Pet?</label>
+      <select name="favouritepet" id="favouritepet">
         <option value="none">None</option>
-        <option value="dog">Dog</option>
-        <option value="bird">Bird</option>
-        <option value="cat">Cat</option>
+        <option value="dog" <?= $_GET['favouritepet'] == 'dog' ? 'selected' : '' ?>>Dog</option>
+        <option value="bird" <?= $_GET['favouritepet'] == 'bird' ? 'selected' : '' ?>>Bird</option>
+        <option value="cat" <?= $_GET['favouritepet'] == 'cat' ? 'selected' : '' ?>>Cat</option>
       </select>
 
       <button type="submit">Submit</button>
