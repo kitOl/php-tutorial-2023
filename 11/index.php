@@ -31,6 +31,12 @@
   $array2 = ['kiwi', 'duryan'];
   print_r(array_merge($fruits, $array2));
 
+  // FUNCTIONS DATE AND TIME
+  echo '<br>', date('Y-m-d H:i:s');
+
+  echo '<br>', time();
+  echo '<br>', strtotime('2024-05-23 15:13:02'); // 1716469982
+
 
 
   ?>
