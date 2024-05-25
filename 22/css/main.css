@@ -21,11 +21,13 @@ nav {
   padding: 20px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 nav a {
   display: inline-block;
   padding: 10px;
+  margin-right: 30px;
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -40,10 +42,14 @@ nav a:hover {
 
 main {
   padding: 30px 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: flex-start;
   text-align: center;
 }
 
-form {
+main form {
   /* width: 25vw; */
   margin: 20px auto 50px;
   display: flex;
