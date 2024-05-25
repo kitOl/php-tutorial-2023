@@ -1,0 +1,1 @@
+INSERT INTO comments (username, comment_text, users_id) VALUES ('Oleg', 'This is a comment on a website!', 1);

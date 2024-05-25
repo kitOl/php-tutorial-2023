@@ -1,0 +1,112 @@
+html,
+body {
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  transition: all 0.15s ease-in-out;
+}
+
+nav a:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 12px;
+}
+
+main {
+  padding: 30px 10px;
+  text-align: center;
+}
+
+form {
+  /* width: 25vw; */
+  margin: 20px auto 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+label,
+input,
+select {
+  width: inherit;
+}
+
+label {
+  font-size: 28px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5b5a5a;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #dedede;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+select {
+  width: 14vw;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #5b5a5a;
+  color: #fff;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(37, 100, 183);
+  font-size: 18px;
+  color: #fff;
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 12px;
+}
+
+.calc-error {
+  font-size: 18px;
+  color: red;
+}
+
+.calc-result {
+  /* font-size: 18px; */
+  /* font-weight: bold; */
+  color: lightgreen;
+}
