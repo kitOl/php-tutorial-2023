@@ -10,11 +10,19 @@
 </head>
 
 <body>
-  <pre>
-  <?php
+  <nav>
+    <a href="index.php" title="Home page">HOME</a>
+  </nav>
 
-  ?>
-</pre>
+  <h3>Signup</h3>
+
+  <form action="includes/formhandler.inc.php" method="post" autocomplete="off">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="pwd" placeholder="Password">
+    <input type="text" name="email" placeholder="E-Mail">
+    <button>Signup</button>
+  </form>
+
 </body>
 
 </html>
