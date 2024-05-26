@@ -1,0 +1,118 @@
+html,
+body {
+  box-sizing: border-box;
+  background-color: #1e1e1e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+main {
+  padding: 30px 10px;
+  text-align: left;
+}
+
+form {
+  /* width: 25vw; */
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+label,
+input,
+select {
+  width: inherit;
+}
+
+label {
+  font-size: 28px;
+}
+
+input {
+  padding: 10px;
+  background-color: #5b5a5a;
+  border-radius: 5px;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #dedede;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+select {
+  width: 14vw;
+  padding: 5px;
+  font-size: 16px;
+  background-color: #5b5a5a;
+  color: #fff;
+}
+
+button {
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(37, 100, 183);
+  font-size: 18px;
+  color: #fff;
+}
+
+.calc-error {
+  font-size: 18px;
+  color: red;
+}
+
+.calc-result {
+  /* font-size: 18px; */
+  /* font-weight: bold; */
+  color: lightgreen;
+}
+
+section {
+  padding: 20px 0;
+}
+
+section a {
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  margin: 0 auto;
+  text-decoration: none;
+  text-align: center;
+  color: #fcfcfc;
+  text-transform: lowercase;
+}
+
+section a:hover {
+  border-radius: 5px;
+  box-shadow: 0 0 12px;
+}
+
+section h4 {
+  text-align: left;
+}
+
+section div {
+  width: 50vw;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #5b5a5a;
+  border-radius: 5px;
+}
