@@ -17,6 +17,11 @@ h6 {
   margin-top: 20px;
 }
 
+p {
+  margin: 5px 0;
+  line-height: 1.75;
+}
+
 nav {
   padding: 20px 0;
   display: flex;
@@ -73,13 +78,13 @@ input {
   padding: 10px;
   border-radius: 5px;
   background-color: #5b5a5a;
+  font-size: 16px;
+  line-height: 1.5;
   color: #fff;
 }
 
 input::placeholder {
   color: #dedede;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 select {
@@ -106,12 +111,19 @@ button:hover {
   box-shadow: 0 0 12px;
 }
 
-.calc-error {
-  font-size: 18px;
+.form-error,
+.form-success {
+  box-shadow: 0 0 12px;
+}
+
+.calc-error,
+.form-error {
+  /* font-size: 16px; */
   color: red;
 }
 
-.calc-result {
+.calc-result,
+.form-success {
   /* font-size: 18px; */
   /* font-weight: bold; */
   color: lightgreen;
