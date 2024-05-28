@@ -2,6 +2,15 @@
 
 declare(strict_types=1);
 
+function output_username()
+{
+  if (isset($_SESSION['user_id'])) {
+    echo '<span class="form-success">You are logged in as ' . $_SESSION['user_username'] . '</span>';
+  } else {
+    echo '<span class="form-error">You are not logged in</span>';
+  }
+}
+
 function check_login_errors()
 {
   if (isset($_SESSION['errors_login'])) {

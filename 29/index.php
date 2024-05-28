@@ -19,29 +19,47 @@ require_once 'includes/login_view.inc.php';
   <nav>
     <a href="index.php" title="Home page">Home</a>
   </nav>
+
+  <h3>
+    <?php output_username(); ?>
+  </h3>
+
   <main>
 
-    <div>
-      <h3>Login</h3>
-      <form action="includes/login.inc.php" method="post" autocomplete="off">
-        <input type="text" name="username" placeholder="Username">
-        <input type="password" name="pwd" placeholder="Password">
-        <button>Login</button>
-      </form>
+    <?php if (isset($_SESSION['user_id'])) : ?>
+      <div>
+        <h3>Logout</h3>
+        <form action="includes/logout.inc.php" method="post" autocomplete="off">
+          <button>Logout</button>
+        </form>
 
-      <?php check_login_errors(); ?>
-    </div>
+      </div>
 
-    <div>
-      <h3>Signup</h3>
-      <form action="includes/signup.inc.php" method="post" autocomplete="off">
-        <?php signup_inputs(); ?>
-        <button>Signup</button>
-      </form>
+    <?php else : ?>
 
-      <?php check_signup_errors(); ?>
+      <div>
+        <h3>Login</h3>
+        <form action="includes/login.inc.php" method="post" autocomplete="off">
+          <input type="text" name="username" placeholder="Username">
+          <input type="password" name="pwd" placeholder="Password">
+          <button>Login</button>
+        </form>
 
-    </div>
+        <?php check_login_errors(); ?>
+      </div>
+
+      <div>
+        <h3>Signup</h3>
+        <form action="includes/signup.inc.php" method="post" autocomplete="off">
+          <?php signup_inputs(); ?>
+          <button>Signup</button>
+        </form>
+
+        <?php check_signup_errors(); ?>
+
+      </div>
+
+    <?php endif; ?>
 
   </main>
 </body>
